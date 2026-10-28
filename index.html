@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Statistics 1 | Notes</title>
+
+  <!-- Website styling -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Markdown renderer -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <!-- MathJax configuration -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: [
+          'script', 'noscript', 'style',
+          'textarea', 'pre', 'code'
+        ]
+      },
+      startup: {
+        typeset: false
+      }
+    };
+  </script>
+
+  <!-- MathJax equation renderer -->
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+  </script>
+
+  <!-- Website functionality -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Top navigation bar -->
+  <header class="topbar">
+    <button
+      id="menu-toggle"
+      aria-label="Toggle sidebar"
+      aria-expanded="false">
+      ☰
+    </button>
+
+    <a class="site-title" href="./">Statistics 1</a>
+
+    <span class="topbar-label">Study Notes</span>
+  </header>
+
+  <!-- Main website layout -->
+  <div class="layout">
+
+    <!-- Left sidebar -->
+    <aside id="sidebar" class="sidebar">
+
+      <input
+        type="search"
+        id="search"
+        placeholder="Search topics..."
+        aria-label="Search topics">
+
+      <nav id="navigation"></nav>
+
+    </aside>
+
+    <!-- Main content area -->
+    <main id="content" class="content">
+      <h1>Statistics 1</h1>
+
+      <p>
+        Select a topic from the sidebar to start reading.
+      </p>
+    </main>
+
+  </div>
+
+</body>
+</html>
+
